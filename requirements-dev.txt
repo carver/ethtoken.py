@@ -1,2 +1,4 @@
 ipython
 flake8
+wheel
+twine
