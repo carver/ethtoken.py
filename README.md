@@ -2,7 +2,7 @@
 
 This is a tiny library leveraging web3.py to make an interface for
 working with [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md)
- (formerly ERC20) tokens on Ethereum.
+tokens on Ethereum. (formerly ERC20)
 
 **It is currently in Pre-alpha, with 0 automated tests**
 
@@ -21,6 +21,7 @@ pip install --pre ethtoken
 ```py
 from ethtoken import token
 
+# Use the ENS name that points to your token contract here:
 omg = token("omg.thetoken.eth")
 ```
 
@@ -29,9 +30,7 @@ omg = token("omg.thetoken.eth")
 Most EIP20 methods are optional. `ethtoken` makes no attempt to
 verify which methods are implemented by a token contract.
 
-Depending on the contract, some or all of the APIs will be functional.
-
-All the typical
+Here's an example with all the read functions working:
 
 ```py
 >>> omg.name()
@@ -46,6 +45,7 @@ All the typical
 >>> omg.totalSupply()
 140245398245132780789239631
 
+# Use the ENS name of the owner address here:
 >>> omg.balanceOf('ethereumfoundation.eth')
 308744633639977714804
 
@@ -53,7 +53,7 @@ All the typical
 
 ### Custom methods
 
-`ethtoken` has a single custom method, `token_balance`.
+`ethtoken` has a single custom method not in the EIP20 spec: `token_balance`.
 
 ```py
 >>> omg.token_balance("ethereumfoundation.eth")
@@ -62,7 +62,7 @@ Decimal('308.744633639977714804')
 
 It returns the balance of an address, with the decimal point shifted according
 to the `decimals()` value on the contract. In other words,
-it should be the human-readable number of tokens that the given address owns.
+it is the human-readable number of tokens that the given address owns.
 
 ### Completely Untested: Transfers
 
