@@ -12,14 +12,14 @@ from setuptools import (
 DIR = os.path.dirname(os.path.abspath(__file__))
 
 install_requires = [
-    'web3~=4.0b',
+    'web3~=4.0b2',
 ]
 if sys.platform == 'win32':
     install_requires.append('pypiwin32')
 
 setup(
     name='ethtoken',
-    version='0.0.1a1',
+    version='0.0.1a2',
     description="""Ethereum EIP20 Token Interface""",
     long_description_markdown_filename='README.md',
     author='Jason Carver',
