@@ -46,7 +46,7 @@ if sys.platform == 'win32':
 setup(
     name='ethtoken',
     # NOTE: do not change version manually, use `make release bump=$$PART_TO_BUMP$$` instead
-    version='0.0.1-alpha.3',
+    version='0.0.1-alpha.4',
     description="""Ethereum EIP20 Token Interface""",
     long_description_markdown_filename='README.md',
     author='Jason Carver',
