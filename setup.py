@@ -10,7 +10,7 @@ from setuptools import (
 
 extras_require={
     'test': [
-        "pytest==3.3.2",
+        "pytest>=3.6.0",
         "tox>=2.9.1,<3",
     ],
     'lint': [
@@ -38,7 +38,7 @@ extras_require['dev'] = (
 )
 
 install_requires = [
-    'web3>=4.0.0,<5.0.0',
+    'web3>=5.0.0a1,<6.0.0',
 ]
 if sys.platform == 'win32':
     install_requires.append('pypiwin32')
