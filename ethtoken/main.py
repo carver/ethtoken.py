@@ -1,10 +1,18 @@
 
-from decimal import Decimal
+from decimal import (
+    Decimal,
+)
 
-from cytoolz import curry
-from web3.contract import ConciseContract
+from cytoolz import (
+    curry,
+)
+from web3.contract import (
+    ConciseContract,
+)
 
-from ethtoken.abi import EIP20_ABI
+from ethtoken.abi import (
+    EIP20_ABI,
+)
 
 
 @curry
