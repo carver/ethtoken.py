@@ -10,7 +10,7 @@ from setuptools import (
 
 extras_require={
     'test': [
-        "pytest==3.3.2",
+        "pytest>=3.6.0",
         "tox>=2.9.1,<3",
     ],
     'lint': [
@@ -55,6 +55,7 @@ setup(
     include_package_data=True,
     install_requires=install_requires,
     setup_requires=['setuptools-markdown'],
+    python_requires='>=3.5,<4',
     extras_require=extras_require,
     py_modules=['ethtoken'],
     license="MIT",
@@ -69,5 +70,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
 )
