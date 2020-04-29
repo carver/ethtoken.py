@@ -38,7 +38,7 @@ extras_require['dev'] = (
 )
 
 install_requires = [
-    'web3>=4.0.0,<5.0.0',
+    'web3>=4.0.0,<6.0.0',
 ]
 if sys.platform == 'win32':
     install_requires.append('pypiwin32')
