@@ -23,7 +23,7 @@ def eip20_tokenBalanceOf(token, address):
 def eip20_token(address, w3=None, **kwargs):
     '''
     :param address: `EIP20
-        <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md>`_
+        <https://eips.ethereum.org/EIPS/eip-20>`_
         token contract
     :type address: ENS name or hex str
     :param `Web3 <http://web3py.readthedocs.io/en/latest/quickstart.html#using-web3>`_ w3:
