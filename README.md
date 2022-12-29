@@ -1,7 +1,7 @@
 # ethtoken.py
 
 This is a tiny library leveraging web3.py to make an interface for
-working with [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md)
+working with [EIP20](https://eips.ethereum.org/EIPS/eip-20)
 tokens on Ethereum. (formerly ERC20)
 
 **It is currently in Alpha, with 0 automated tests**
